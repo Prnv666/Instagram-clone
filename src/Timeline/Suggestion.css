@@ -1,0 +1,49 @@
+.Suggestion{
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 100%;
+    margin-left: 40px;
+    
+}
+.suggestion-title{
+    color: rgba(255, 255, 255, 0.596);
+    font-weight: bold;
+}
+
+.username-left{
+    display: flex;
+    align-items: center;
+   
+
+}
+.username-left .avatar{
+    margin-right: 10px;
+}
+.username-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.user-relation{
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 12px;
+    padding: 3px;
+}
+.suggestion-user-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.follow-button{
+    background: 0;
+    border: 0;
+    color: rgb(135, 175, 235);
+    cursor: pointer;
+}
+.follow-button:hover{
+    color: blue;
+}
+.username{
+
+}
