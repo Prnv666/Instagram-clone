@@ -9,6 +9,7 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .post-header-author{
     display: flex;
@@ -16,11 +17,14 @@
     align-items: center;
     font-weight: bolder;
 }
+.avatar{
+    margin-right: 10px;
+}
 .post-header-author span{
     color: rgba(255, 255, 255, 0.628);
     font-size: 15px;
     margin-left: 20px ;
-
+    cursor: pointer;
 }
 .post-image img{
     width: 100%;
@@ -28,7 +32,8 @@
     border-radius: 4px;
 }
 .post-footer{
-
+    width: 100%;
+    /* background: orange; */
 }
 .post-footer-icons{
     display: flex;

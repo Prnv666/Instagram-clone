@@ -47,6 +47,34 @@ const Timeline = () => {
     },
   ]);
 
+  const [suggestions, setSuggestions] = useState([
+    {
+      sugUserName : "Riya",
+      sugRelation : "You may Know her",
+      sugImage : "https://images.unsplash.com/photo-1731641904795-2873e1da5ac1?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
+    },
+    {
+      sugUserName : "Tejas",
+      sugRelation : "From Your Contacts",
+      sugImage : "https://plus.unsplash.com/premium_photo-1730828574006-6cc51c904b31?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      sugUserName : "Ashwil",
+      sugRelation : "From Your Contacts",
+      sugImage : "https://plus.unsplash.com/premium_photo-1727539364539-c382852a87c4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      sugUserName : "Pooja",
+      sugRelation : "Your Sister",
+      sugImage : "https://images.unsplash.com/photo-1732203363655-dda8834440ef?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      sugUserName : "Mayur",
+      sugRelation : "Your Brother",
+      sugImage : "https://plus.unsplash.com/premium_photo-1682096246950-fb9c9ace1d51?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+  ]);
+
   return (
     <div className="timeline">
       <div className="timeline-left">
@@ -63,7 +91,14 @@ const Timeline = () => {
         </div>
       </div>
       <div className="timeline-right">
-        <Suggestion />
+      <div className="suggestion-title">Suggested for You</div>
+      {suggestions.map((suggestion) => (
+            <Suggestion
+            sugUserName={suggestion.sugUserName}
+            sugRelation={suggestion.sugRelation}
+            sugImage={suggestion.sugImage}
+            />
+          ))}        
       </div>
     </div>
   );

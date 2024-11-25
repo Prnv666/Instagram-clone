@@ -12,10 +12,10 @@ const Post = ({user, postImage, likes, comments, timeStamp}) => {
     <div className="post">
       <div className="post-header">
         <div className="post-header-author">
-          <Avatar>{user.charAt(0).toUpperCase()}</Avatar>
-          {user} . <span>{timeStamp}</span>
+          <Avatar className="avatar">{user.charAt(0).toUpperCase()}</Avatar>
+          {user} . <span style={{cursor:"pointer"}}>{timeStamp}</span>
         </div>
-        <MoreHorizIcon />
+        <MoreHorizIcon style={{cursor:"pointer"}}/>
       </div>
       <div className="post-image">
         <img
@@ -37,7 +37,7 @@ const Post = ({user, postImage, likes, comments, timeStamp}) => {
         </div>
         <div className="likes">
           Liked By {/* {"Mutual friend"}  */}
-          <span style={{ fontWeight: "bold", cursor:"pointer" }}>{user}</span> & <span style={{fontWeight:"bold"}}>{likes}</span>  others
+          <span style={{ fontWeight: "bold", cursor:"pointer" }}>{user}</span> & <span style={{fontWeight:"bold", cursor:"pointer"}}>{likes}</span>  others
         </div>
         <div className="comments">
             view All <span style={{fontWeight:"bold"}}>{comments}</span> Comments 

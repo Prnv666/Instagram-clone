@@ -5,11 +5,6 @@
     margin-left: 40px;
     
 }
-.suggestion-title{
-    color: rgba(255, 255, 255, 0.596);
-    font-weight: bold;
-}
-
 .username-left{
     display: flex;
     align-items: center;

@@ -1,0 +1,35 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.login img{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.login input {
+    background: #ffffff24;
+    border: 1px solid gray;
+    color:white;
+    border-radius: 3px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color:white;
+}
+.login input:focus{
+    outline: 1px solid gray;
+}
+.login button{
+    padding: 12px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background: #0095f6;
+    font-weight: bolder;
+    cursor: pointer;
+}
